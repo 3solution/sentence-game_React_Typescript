@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 type Props = {
   label: string;
   value: string;
-  setValue: any;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
   className?: string;
 };
 
