@@ -25,7 +25,10 @@ const MainPage = () => {
       <Input label={'What'} value={what} setValue={setWhat} className={styles.input} />
       <Input label={'When'} value={when} setValue={setWhen} className={styles.input} />
       <Input label={'Where'} value={where} setValue={setWhere} className={styles.input} />
-      <button className={styles.button} onClick={() => setSentence(`${who}  ${what}  ${when}  ${where}.`)}>
+      <button
+        className={styles.button}
+        onClick={() => setSentence(`${who.charAt(0).toUpperCase() + who.slice(1)}  ${what}  ${when}  ${where}.`)}
+      >
         Create Sentence
       </button>
       <p className={styles.sentence}>{sentence}</p>
