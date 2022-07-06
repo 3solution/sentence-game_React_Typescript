@@ -27,7 +27,7 @@ const MainPage = () => {
       <Input label={'Where'} value={where} setValue={setWhere} className={styles.input} />
       <button
         className={styles.button}
-        onClick={() => setSentence(`${who.charAt(0).toUpperCase() + who.slice(1)}  ${what}  ${when}  ${where}.`)}
+        onClick={() => setSentence(`${who.charAt(0).toUpperCase() + who.slice(1)}  ${what}  ${where}  ${when}.`)}
       >
         Create Sentence
       </button>
